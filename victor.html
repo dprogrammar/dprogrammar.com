@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VICTOR PAGE</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<style type="text/css">
+
+	p{
+		line-height: 30px;
+	}
+		.background{
+			
+			padding: 20px;
+			
+			background-color: green;
+			text-align: justify;
+			background-image: url("bkg.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+				}
+	h2{
+		text-align: center;
+		color: darkblue;
+	}
+
+	form{
+		padding-bottom: 5%;
+	}
+
+	/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+@media (min-width: 940px) {
+		 body {
+
+			border-top: 4px solid red;
+		 }
+		
+		 
+	 }
+
+
+	 @media (max-width: 939px) {
+		body {
+
+			border-top: 4px solid blue;
+		 }	 
+	}
+
+
+	@media (max-width: 600px) {
+		body {
+
+			border-top: 4px solid green;
+		 }	 
+	}
+		
+		
+	</style>
+</head>
+<body background="plainimg.jpg">
+	
+
+<div class="background">
+	<p>
+		This project is aimed to design a web based management system using United Bank of Africa as a case study for the needs of accurate and efficient database application towards effective information retrieval and decision making. The project was designed using Asp.net and part of Php (preprocessor hypertext) and Microsoft Access as the database for storing and retrieving of records. It is used to keep proper recruitment process in areas of inputting new staff record, updating existing staff information, deleting and it provides a solid protection in which each user personnel user (staff) has he/her personal username and password to gain access to its information. All records are saved and can be retrieving from the database. (Microsoft access).This project is aimed to design a web based management system using United Bank of Africa as a case study for the needs of accurate and efficient database application towards effective information retrieval and decision making. The project was designed using Asp.net and part of Php (preprocessor hypertext) and Microsoft Access as the database for storing and retrieving of records. It is used to keep proper recruitment process in areas of inputting new staff record, updating existing staff information, deleting and it provides a solid protection in which each user personnel user (staff) has he/her personal username and password to gain access to its information. All records are saved and can be retrieving from the database.
+	</p>
+
+</div>
+
+<SCript>
+	function validatetxt () {
+		var box = document.getElementById("fname");
+		var box2 = document.getElementById("lname");
+		var box3 = document.getElementById("country");
+		var box4 = document.getElementById("subject");
+
+
+		if (box.value == "" || box2.value =="" || box3.value=="" || box4.value=="") {
+			alert("Filled Must be Filled");
+			box.focus();
+			box.style.border="solid 3px red";
+			return false;
+
+		}
+	}
+
+	
+</SCript>
+
+
+<h2>FILL IN THE BOX AND SEND ME A MAIL</h2>
+	<div> 
+<div class="container">
+  <form id="theform" action="success.html" method="post" onsubmit="return validatetxt();">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" size="44443" placeholder="Your name.."> 
+
+    <label for="lname">Last Name</label>
+	<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Comment</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+	
+	</div>
+
+
+</body>
+</html>
